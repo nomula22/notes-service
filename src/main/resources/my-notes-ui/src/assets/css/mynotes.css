@@ -1,0 +1,288 @@
+body {
+    background: #f7f8f9;
+    color:#4D4D4F;
+}
+
+button{
+  margin: 5px;
+}
+
+a {
+    color:#007DC5;
+}
+
+.red {
+    color:red;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    width:100%;
+    margin:0;
+}
+/* ==========================================================================
+   Main styles: Site specific, Header/footer, Navigation, buttons, utility styles
+   ========================================================================== */
+
+#header {
+    background:#0f7dc2;
+    width:100%;
+    min-height:80px;
+    border-bottom:5px solid #f9f9f9;
+    box-shadow: inset 0px -3px 0px 0px #0c6ba5;
+    position: relative;
+    z-index:10;
+}
+
+.header-logo-text {
+    position: relative;
+    top:26px;
+    left:10px;
+    color:#fff;
+}
+
+.header-logo {
+    margin: 15px 0 0;
+}
+
+.top-menu {
+    position: relative;
+    background: #005387;
+    width:100%;
+    z-index: 1;
+}
+
+table tbody tr td a {
+  color: #a0a5b1;
+  display: inline-block;
+  margin: 0 5px;
+}
+table tbody tr td a.view {
+  color: #03A9F4;
+}
+table td a.edit {
+  color: #FFC107;
+}
+table td a.delete {
+  color: #E34724;
+}
+
+.md-card {
+  max-width: 400px;
+}
+
+.btn {
+    border-radius: 3px;
+    padding: .25rem .75rem;
+}
+
+.btn-primary {
+    color:#fff;
+    background:#007DC5;
+    border:1px solid #007DC5;
+    box-shadow: 0px 3px 8px rgba(0, 125, 197, 0.35);
+}
+
+.btn-primary:hover {
+    color:#fff;
+    background:#005387;
+    border:1px solid #005387;
+    box-shadow: 0px 5px 8px rgba(0, 125, 197, 0.40);
+}
+
+.btn-secondary {
+    color:#007DC5;
+    background:#fff;
+    border:1px solid #007DC5;
+    box-shadow: 0px 3px 8px rgba(0, 125, 197, 0.35);
+}
+
+.btn-secondary:hover {
+    background-color: #F1F2F2;
+    color:#007DC5;
+    border:1px solid #007DC5;
+    box-shadow: 0px 5px 8px rgba(0, 125, 197, 0.40);
+}
+
+.btn-tertiary {
+    color:#000;
+    background:#fff;
+    border:1px solid #000;
+    box-shadow: 0px 3px 8px rgba(204, 204, 204, 0.9);
+}
+
+.btn-tertiary:hover {
+    background-color: #F1F2F2;
+    color:#000;
+    border:1px solid #000;
+    box-shadow: 0px 5px 8px rgba(204, 204, 204, 0.9);
+}
+
+.btn-success {
+    color:#fff;
+    background:#28a745;
+    border:1px solid #28a745;
+    box-shadow: 0px 3px 8px rgba(40, 167, 69, 0.35);
+}
+
+.btn-success:hover {
+    color:#fff;
+    background:#247737;
+    border:1px solid #247737;
+    box-shadow: 0px 5px 8px rgba(40, 167, 69, 0.40);
+}
+
+.btn-info {
+    color:#fff;
+    background:#17a2b8;
+    border:1px solid #17a2b8;
+    box-shadow: 0px 3px 8px rgba(23, 162, 184, .35);
+}
+
+.btn-info:hover {
+    color:#fff;
+    background:#147685;
+    border:1px solid #147685;
+    box-shadow: 0px 5px 8px rgba(23, 162, 184, .40);
+}
+
+.btn-warning {
+    color:#fff;
+    background:#F89420;
+    border:1px solid #F89420;
+    box-shadow: 0px 3px 8px rgba(248, 148, 32, 0.35);
+}
+
+.btn-warning:hover {
+    color:#fff;
+    background:#CE741B;
+    border:1px solid #CE741B;
+    box-shadow: 0px 5px 8px rgba(248, 148, 32, 0.40);
+}
+
+.btn-danger {
+    color:#fff;
+    background:#EF4123;
+    border:1px solid #EF4123;
+    box-shadow: 0px 3px 8px rgba(239, 65, 35, 0.35);
+}
+
+.btn-danger:hover {
+    color:#fff;
+    background:#ce3420;
+    border:1px solid #ce3420;
+    box-shadow: 0px 5px 8px rgba(239, 65, 35, 0.40);
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+    color:#fff;
+}
+
+
+/* ==================================================================================================
+   Footer styles
+   ================================================================================================== */
+
+.footer {
+    color: #fff;
+    background: #444;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.footer small, .footer a, .footer hr {
+    color:#acacac;
+    font-size:.85em;
+}
+
+
+.footer hr {
+    border-color: #707072;
+}
+
+.footer-links {
+    margin:0 auto;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin-right:12px;
+    color:#DDDDDD;
+}
+
+.footer-links a:hover {
+    color:#fff;
+}
+
+.footer-links a:last-child {
+    margin-right: 0;
+}
+
+
+/* ==================================================================================================
+   Useful utility classes, hide stuff, zero padding/margins, spacers to add space between elements
+   ================================================================================================= */
+
+
+
+.space-left {
+    margin-left: 10px;
+}
+
+.space-right {
+    margin-right: 10px;
+}
+
+.spacer5 {
+    height: 5px;
+    clear: both;
+}
+
+.spacer10 {
+    height: 10px;
+    clear: both;
+}
+
+.spacer15 {
+    height: 15px;
+    clear: both;
+}
+
+.spacer20 {
+    height: 20px;
+    clear: both;
+}
+
+.spacer25 {
+    height: 25px;
+    clear: both;
+}
+
+.spacer30 {
+    height: 30px;
+    clear: both;
+}
+
+.spacer40 {
+    height: 40px;
+    clear: both;
+}
+
+.spacer50 {
+    height: 50px;
+    clear: both;
+}
+
+.spacer100 {
+    height: 100px;
+    clear: both;
+}
+
+

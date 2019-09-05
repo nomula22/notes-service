@@ -1,0 +1,10 @@
+<div class="container" *ngIf="note">
+  <h4>View Note</h4>
+<mat-card class="md-card">
+  <mat-card-title>{{note.title}}</mat-card-title>
+  <mat-card-content>{{note.content}}</mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-button [routerLink]="['/home']" class="close" label="Close">Close</button>
+  </mat-card-actions>
+</mat-card>
+</div>

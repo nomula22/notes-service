@@ -1,0 +1,47 @@
+<div class="container">
+<h4>New Note</h4>
+<form [formGroup]="addForm" novalidate (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label class="center-block">Title:
+      <input class="form-control" formControlName="title">
+    </label>
+  </div>
+  <div
+    *ngIf="addForm.controls['title'].invalid && (addForm.controls['title'].dirty || addForm.controls['title'].touched)"
+    class="alert alert-danger">
+    <div *ngIf="addForm.controls['title'].errors.required">
+      A title is required.
+    </div>
+    <div *ngIf="addForm.controls['title'].hasError('maxlength')">
+      The note's title must be less than 255 characters.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="center-block">Content:
+      <textarea class="form-control" formControlName="content"></textarea>
+    </label>
+  </div>
+  <div
+    *ngIf="addForm.controls['content'].invalid && (addForm.controls['content'].dirty || addForm.controls['content'].touched)"
+    class="alert alert-danger">
+    <div *ngIf="addForm.controls['content'].errors.required">
+      The note's content is required.
+    </div>
+    <div *ngIf="addForm.controls['content'].hasError('maxlength')">
+      The note's content must be less than 1024 characters.
+    </div>
+  </div>
+  <div class="btn-toolbar">
+    <button type="submit" class="btn btn-primary" label="Add">Add</button>
+    <button type="button" class="btn btn-secondary" (click)="clearForm()" label="Clear">Clear</button>
+    <button type="button" [routerLink]="['/home']" class="close" label="Close">Close</button>
+  </div>
+</form>
+<div *ngIf="errorExists">
+  <p class="alert alert-danger">Error in adding the Note, please try again.</p>
+</div>
+<div *ngIf="note">
+  <p class="alert alert-success">Note {{note.title}} added.</p>
+</div>
+</div>

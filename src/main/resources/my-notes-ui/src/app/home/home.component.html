@@ -1,0 +1,34 @@
+<p *ngIf="_isNoteListEmpty()">There are no notes.</p>
+
+<div class="container">
+  <div class="table-wrapper">
+    <div class="table-title">
+      <div class="row">
+        <div >
+          <h4>List of <b>My Notes</b></h4>
+        </div> &nbsp;&nbsp;&nbsp;
+        <div>
+          <a [routerLink]="['/add-note']" class="btn btn-success btn-sm" data-toggle="tooltip" title="add new note"><i class="material-icons">&#xE147;</i> </a>
+        </div>
+      </div>
+    </div>
+    <table class="table table-hover table-responsive">
+      <thead>
+      <tr>
+        <th>Title</th>
+        <th >Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let note of notes; index as i">
+        <td>{{note.title}}</td>
+        <td>
+          <a class="view" [routerLink]="['/view-note', note.id]" data-toggle="tooltip" title="view" ><i class="material-icons">&#xE417;</i></a>
+          <a class="edit" [routerLink]="['/edit-note', note.id]" data-toggle="tooltip" title="edit" ><i class="material-icons">&#xE254;</i></a>
+          <a class="delete" [routerLink]="" (click)="openDialog(note.id)" data-toggle="tooltip" title="delete" ><i class="material-icons">&#xE872;</i></a>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
