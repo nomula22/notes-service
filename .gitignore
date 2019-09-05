@@ -8,8 +8,7 @@ target/
 .mvn/**
 mvnw
 mvnw.cmd
-!**/src/main/**
-!**/src/test/**
+
 
 ### STS ###
 .apt_generated
